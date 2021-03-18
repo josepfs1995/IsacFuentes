@@ -1,6 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { element } from 'protractor';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -9,6 +8,7 @@ import { element } from 'protractor';
 })
 export class MenuComponent implements OnInit {
 
+  show:boolean = false;
   constructor(private viewportScroller:ViewportScroller) { }
 
   ngOnInit(): void {
@@ -16,5 +16,8 @@ export class MenuComponent implements OnInit {
 
   onClickScroll(elementId:string):void{
     this.viewportScroller.scrollToAnchor(elementId);
+  }
+  collapseMenu():void{
+    this.show = !this.show;
   }
 }
