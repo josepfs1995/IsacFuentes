@@ -1,0 +1,27 @@
+
+
+   
+    <div class="card mt-4" id="skills">
+        <div class="card-body" id="skills">
+            <h5 class="card-title">Skills:</h5>
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr *ngFor="let item of skills">
+                            <td class="font-weight-bold">{{item.name}}</td>
+                            <td class="col-8">
+                                <div class="progress">
+                                    <div [ngClass]="{'progress-bar progress-bar-striped': item.porcentage <= 100,
+                                                'bg-warning': item.porcentage <= 50,
+                                                'bg-danger': item.porcentage <= 20 }" 
+                                    role="progressbar" style="width: {{item.porcentage}}%" aria-valuenow="{{item.porcentage}}" aria-valuemin="0" aria-valuemax="100">{{item.porcentage}}%</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>

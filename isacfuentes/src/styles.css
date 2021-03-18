@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.header-nav {
+    background-color: rgba(255,255,255,1);
+    color: black;
+}
+  .nav-item > a {
+    color: black
+  }
+  .nav-item > a:hover {
+    text-decoration:underline
+  }
+  body {
+    background-image: url(./assets/img/background.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position-y: 20px;
+    background-attachment: fixed;
+  }
+  .container__bg {
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  .foto > img{
+    box-shadow:rgba(0, 0, 0, 0.4) 4px 4px 4px;
+  }
+  
+  .card{
+    background-color:rgba(255,255,255,1);
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+  }
+  
+.font-weight-bold{
+  font-weight: 700!important;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #0056b3;
+  text-decoration: underline;
+}
+.btn-outline-info {
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+.btn-outline-info:hover {
+  color: white;
+}
+.close{
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
